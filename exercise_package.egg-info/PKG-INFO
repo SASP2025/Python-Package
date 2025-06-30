@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: exercise_package
+Version: 0.1
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: pytest-cov; extra == "tests"
+Dynamic: provides-extra

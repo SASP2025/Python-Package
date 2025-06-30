@@ -1,0 +1,1 @@
+from exercise_package import PEP8_commentsdef test_summarize_metadata():    header = {        "OBSERVER": "Lola",          "TELESCOPE": "JWST",        "FILTER": "F200W"        }    result = PEP8_comments.summarize_metadata(header)    expected = "Observation by Lola using JWST telescope with the F200W filter."    assert result == expected    

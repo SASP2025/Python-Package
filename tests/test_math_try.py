@@ -1,0 +1,1 @@
+from exercise_package import math_trydef test_add():    assert math_try.add(2, 3)  ==5    assert math_try.add(-1, 1) ==0    assert math_try.add(0, 0)  ==0

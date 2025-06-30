@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: python-package
+Version: 0.1.0
+Summary: A sample Python package with testing and coverage
+Author-email: Mariane Diby <mdiby@stsci.edu>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: pytest-cov; extra == "tests"
+
+We putting examples of python code to test PEP8 functionalities. 
