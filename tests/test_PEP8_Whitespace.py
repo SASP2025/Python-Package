@@ -1,0 +1,1 @@
+from exercise_package import PEP8_Whitespacedef test_normalize_flux():    raw = [10, 12, 14, 16, 18]    normalized = PEP8_Whitespace.normalize_flux(raw)    assert round(sum(normalized), 6) == 0.0   #maen value should be 0

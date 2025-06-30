@@ -1,0 +1,1 @@
+from exercise_package import PEP8_Lay_outdef test_orbital_velocity():    velocity = PEP8_Lay_out.orbital_velocity(5000, 5.97e24)    assert round(velocity, 2) == round(PEP8_Lay_out.orbital_velocity(5000, 5.97e24), 2)    
