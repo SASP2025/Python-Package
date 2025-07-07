@@ -1,6 +1,19 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+on: 
+ push:
+ workflow_dispatch:
+    inputs:
+      environment:
+        type: choice
+        description: 'Which environment to use'
+        required: true
+        default: develop
+        options:
+          - develop
+          - production
+permissions:
+  contents: read
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
