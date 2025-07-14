@@ -19,7 +19,7 @@ jobs:
         python-version: '3.12'
         
     - name: set up coverage option
-      uses: ./actions-example/.github/jobs/pytest
+      uses: SASP2025/actions-example/.github/jobs/pytest@main
       with:
        coverage: true
       
