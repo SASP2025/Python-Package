@@ -29,6 +29,6 @@ jobs:
        coverage: true
        coverage-target: exercise_package
        
-    #- name: Run tests
-      #run: |
-        #pytest
+    - name: Run tests
+      run: |
+        pytest
