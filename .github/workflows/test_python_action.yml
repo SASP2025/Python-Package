@@ -27,6 +27,7 @@ jobs:
       uses: SASP2025/actions-example/.github/jobs/pytest@add-example
       with:
        coverage: true
+       coverage-target: exercise_python
        
     #- name: Run tests
       #run: |
