@@ -19,7 +19,7 @@ jobs:
         python-version: '3.12'
         
     - name: set up coverage option
-      uses: ./.github/jobs/pytest
+      uses: ./actions-example/.github/jobs/pytest
       with:
        coverage: true
       
