@@ -24,7 +24,7 @@ jobs:
         pip install pytest pytest-cov
 
     - name: Run shared pytest action
-      uses: SASP2025/actions-example/.github/jobs/pytest/action.yml@main
+      uses: SASP2025/actions-example/.github/jobs/pytest@main
       with:
         coverage: true
         coverage-target: exercise_package
