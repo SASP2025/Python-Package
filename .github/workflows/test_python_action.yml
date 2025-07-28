@@ -12,7 +12,24 @@ permissions:
 
 jobs:
   test:
-    uses: SASP2025/actions-example/.github/workflows/reusable_pytest.yml@d4f5274d1207eacc40b38ecc326f39d3e35223ca
-    with:
-      coverage: true
-      coverage-target: exercise_package
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install .[tests]
+
+      - name: Run Pytest Composite Action
+        uses: SASP2025/actions-example/.github/jobs/pytest@main
+        with:
+          coverage: true
+          coverage-target: exercise_package
