@@ -29,7 +29,7 @@ jobs:
           pip install .[tests]
 
       - name: Run Pytest Composite Action
-        uses: SASP2025/actions-example/.github/jobs/pytest@main
+        uses: SASP2025/actions-example/.github/jobs/pytest@main   #calls the composite action from another repo
         with:
           coverage: true
           coverage-target: exercise_package
