@@ -1,0 +1,14 @@
+
+name: Test Python files with Pytest (Reusable)
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  run-tests:
+    uses: SASP2025/actions-example/.github/workflows/reusable_pytest.yml@main
+    with:
+      coverage: true
+      coverage-target: exercise_package
